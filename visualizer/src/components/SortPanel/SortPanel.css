@@ -1,0 +1,82 @@
+/**
+ * ソート表示パネルのスタイル
+ */
+
+.sort-panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px 10px;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.panel-badge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  color: var(--text-sub);
+  background: var(--badge-bg);
+}
+
+.panel-badge.is-done {
+  color: #0d2a1d;
+  background: #3ecf8e;
+}
+
+/* キャンバスは枠いっぱいに広げる */
+.bar-canvas {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.bar-canvas canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sort-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: var(--text-sub);
+}
+
+.stat-value {
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}

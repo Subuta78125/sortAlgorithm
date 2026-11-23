@@ -1,0 +1,51 @@
+/**
+ * 凡例のスタイル
+ */
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px 12px;
+  overflow: auto;
+  background: var(--panel-bg);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+.legend-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.legend-note {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--text-sub);
+}

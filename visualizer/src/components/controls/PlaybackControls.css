@@ -1,0 +1,70 @@
+/**
+ * 再生操作パネルのスタイル
+ */
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  filter: brightness(1.15);
+}
+
+.seek-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.seek-bar input {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.seek-bar input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.seek-label {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  font-variant-numeric: tabular-nums;
+}
+
+.speed-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.speed-selector select {
+  padding: 4px 6px;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}

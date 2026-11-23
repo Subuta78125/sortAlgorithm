@@ -1,0 +1,34 @@
+/**
+ * アプリ全体のレイアウト
+ */
+
+/* 画面 1 枚に収める：ヘッダー + 4 列 × 2 行のグリッド */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-title {
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sort-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
