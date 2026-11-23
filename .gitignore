@@ -1,0 +1,31 @@
+# 依存パッケージ（npm install で復元できる）
+node_modules/
+
+# ビルド結果（npm run build で再生成できる）
+dist/
+build/
+
+# ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# 環境変数（APIキーなどを書くことがある）
+.env
+.env.local
+.env.*.local
+
+# エディタ・OS が勝手に作るファイル
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# テスト結果・キャッシュ
+coverage/
+.eslintcache
+*.tsbuildinfo
