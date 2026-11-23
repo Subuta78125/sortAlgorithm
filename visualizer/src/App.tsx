@@ -16,7 +16,7 @@ import { usePlayback } from './hooks/usePlayback'
 import { createShuffledArray } from './utils/shuffle'
 import './App.css'
 
-const DATA_SIZE = 1000
+const DATA_SIZE = 200
 
 export default function App() {
   // 全ソートで共通のランダム配列（ページを開くたびに変わる）
@@ -56,7 +56,7 @@ export default function App() {
         <MergeSort {...sortProps} />
         <QuickSort {...sortProps} />
         <HeapSort {...sortProps} />
-        <Legend />
+        <Legend dataSize={DATA_SIZE} />
       </main>
     </div>
   )

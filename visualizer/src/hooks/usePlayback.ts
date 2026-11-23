@@ -5,8 +5,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 // 選べる再生速度（1 秒あたりのステップ数）
-export const SPEED_OPTIONS = [2_000, 5_000, 20_000, 50_000, 100_000, 500_000] as const
-const DEFAULT_SPEED = 20_000
+export const SPEED_OPTIONS = [200, 500, 1_000, 2_000, 5_000, 20_000] as const
+const DEFAULT_SPEED = 1_000
 
 // 全ソート共通の再生位置（ステップ）を管理するフック。
 // 1 ステップ = 比較 1 回 または 交換・代入 1 回。

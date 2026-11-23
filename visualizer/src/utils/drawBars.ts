@@ -24,7 +24,7 @@ export function drawBars(
   const n = values.length
   const barWidth = width / n
 
-  // 通常の棒はまとめて 1 回で塗る（1000 本でも軽い）
+  // 通常の棒はまとめて 1 回で塗る（本数が多くても軽い）
   ctx.fillStyle = done ? COLORS.done : COLORS.bar
   ctx.beginPath()
   for (let i = 0; i < n; i++) {

@@ -13,7 +13,7 @@ type Props = {
 }
 
 // 配列を棒グラフで描くキャンバス。
-// 1000 本 × 7 個の棒を毎フレーム動かすため、DOM 要素ではなく canvas で描画する。
+// 200 本 × 7 個の棒を毎フレーム動かすため、DOM 要素ではなく canvas で描画する。
 export default function BarCanvas({ values, highlight, done, maxValue }: Props) {
   const wrapperRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
